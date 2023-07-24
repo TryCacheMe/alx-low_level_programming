@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * putss_half - prints half a string followed by
+  * puts_half - prints half a string followed by
   *a new line
   * @str: the referenced string
   * Return: 0 success

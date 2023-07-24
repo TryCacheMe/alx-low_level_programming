@@ -10,5 +10,5 @@ int _strlen(char *c)
 
 	while (c[string_length])
 		string_length++;
-	return(string_length);
+	return (string_length);
 }

@@ -20,19 +20,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		strng = va_arg(list, char *);
 		if (!strng)
 		{
-			strng = "nil";
-		}
-		if (!separator)
-		{
-			printf("%s", strng);
-		}
-		else if (separator && index == 0)
-		{
-			printf("%s", strng);
+			printf("(nil)");
 		}
 		else
 		{
-			printf("%s%s", separator, strng);
+			printf("%s", strng);
+		}
+		if (index != (n - 1) && separator != NULL)
+		{
+			printf("%s", separator);
 		}
 	}
 	printf("\n");
